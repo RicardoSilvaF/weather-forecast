@@ -37,7 +37,7 @@ function App() {
 }
 
 async function searchCityCoordinates(city, setCityWeather, setDataForecast) {
-  fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`)
+  fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`)
     .then((response) => {
       if (!response.ok) {
         throw new Error("Erro ao buscar os dados da API");
