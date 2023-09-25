@@ -3,6 +3,8 @@
 
 ![Forecast App](https://github.com/RicardoSilvaF/weather-forecast/blob/main/Anima%C3%A7%C3%A3o2.gif?raw=true)
 
+## Deploy: https://weather-forecast-ncmq6hcyd-ricardosilvaf.vercel.app
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
