@@ -1,6 +1,8 @@
 # Weather forecast application 
     A simple page that you can search for your city and get the city weather forecast.
 
+![Forecast App](https://github.com/RicardoSilvaF/weather-forecast/blob/main/Anima%C3%A7%C3%A3o2.gif?raw=true)
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
