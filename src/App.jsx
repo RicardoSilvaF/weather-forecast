@@ -93,7 +93,8 @@ async function createForecastGraph(lat, lon, setDataForecast) {
 export default App;
 
 const Wrapper = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 436px;
 `

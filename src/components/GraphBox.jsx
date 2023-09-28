@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-import dayjs from "dayjs";
 import 'dayjs/locale/pt-br';
 
 export default function GraphBox({ dataForecast }) {
@@ -12,13 +11,13 @@ export default function GraphBox({ dataForecast }) {
             margin={{
               top: 5,
               right: 30,
-              left: 20,
+              left: -30,
               bottom: 5,
             }}
           >
             <CartesianGrid stroke="#f7f7f7" />
             <XAxis dataKey="dt" label={{ position: "insideBottom", offset: -10 }} />
-            <YAxis label={{ value: "Temperatura (°C)", angle: -90, position: "insideLeft" }} />
+            <YAxis />
             <Tooltip />
             <Line
               type="monotone"
@@ -35,7 +34,8 @@ export default function GraphBox({ dataForecast }) {
   }
 
 const GraphContainer = styled.div`
-    width: 460px;
+    min-width: 300px;
+    max-width: 500px;
     height: 200px;
     margin-top: 25px;
     font-size: 10px;

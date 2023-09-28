@@ -30,6 +30,11 @@ const SearchBox = ({ cityName, setCityName, onSearch }) => {
   const handleSearchClick = () => {
     onSearch();
   };
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      onSearch();
+    }
+  };
 
   return (
     <SearchComponent>
@@ -38,6 +43,7 @@ const SearchBox = ({ cityName, setCityName, onSearch }) => {
         placeholder="Pesquisar..."
         value={cityName}
         onChange={(e) => setCityName(e.target.value)}
+        onKeyPress={handleKeyPress}
       />
       <SearchButton onClick={handleSearchClick}>Buscar</SearchButton>
     </SearchComponent>

@@ -37,7 +37,6 @@ const WeatherBanner = ({ cityName, cityClouds, cityTemperature }) => {
         <CityClouds>{clouds}</CityClouds>
         <Temperature>{cityTemperature.temp} °C</Temperature>
       </RightWrapper>
-      {/* Outros detalhes do banner */}
     </WeatherBannerComponent>
   );
 };
@@ -52,15 +51,22 @@ const WeatherBannerComponent = styled.div`
     padding: 12px;
     border-radius: 10px;
     margin-top: 35px;
-    width:550px;
+    width:100%;
     display: flex;
     color: white;
     justify-content: space-between;
+
+    @media (max-width: 350px) {
+      font-size: 14px;
+    }
 `;
 const CityName = styled.h1`
     margin-bottom: 20px;
     font-weight: bold;
     font-size: 22px;
+    @media (max-width: 350px) {
+      font-size: 18px; 
+    }
 `;
 
 const CityClouds = styled.div`
@@ -71,6 +77,9 @@ const CityClouds = styled.div`
 const Temperature = styled.div`
     margin-top: 2px;
     font-size: 40px;
+    @media (max-width: 350px) {
+      font-size: 30px; 
+    }
 `
 
 const TemperaturesMax = styled.div`
