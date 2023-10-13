@@ -5,6 +5,7 @@ body {
     display: flex;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
   }
 `
 

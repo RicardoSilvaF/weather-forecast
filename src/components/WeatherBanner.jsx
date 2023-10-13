@@ -20,7 +20,7 @@ const WeatherBanner = ({ cityName, cityClouds, cityTemperature }) => {
     } else if (clouds === 'Algumas nuvens') {
       return '#038ca1'; 
     } else {
-      return 'yellow'
+      return '#00dee6'
     }
   };
 
@@ -58,6 +58,7 @@ const WeatherBannerComponent = styled.div`
 
     @media (max-width: 350px) {
       font-size: 14px;
+      box-sizing: border-box;
     }
 `;
 const CityName = styled.h1`

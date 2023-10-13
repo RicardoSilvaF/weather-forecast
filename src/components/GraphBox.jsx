@@ -16,16 +16,15 @@ export default function GraphBox({ dataForecast }) {
             }}
           >
             <CartesianGrid stroke="#f7f7f7" />
-            <XAxis dataKey="dt" label={{ position: "insideBottom", offset: -10 }} />
-            <YAxis />
+            <XAxis dataKey="dt"  label={{ position: "insideBottom", offset: -10 }}  interval="equidistantPreserveStart"/>
+            <YAxis interval="equidistantPreserveStart"/>
             <Tooltip />
             <Line
               type="monotone"
               dataKey="temp"
               name="Temperatura"
               stroke="#ff8d33"
-              strokeWidth={2}
-              activeDot={{ r: 5 }}
+              activeDot={{ r: 6 }}
             />
           </LineChart>
         </ResponsiveContainer>
@@ -34,8 +33,8 @@ export default function GraphBox({ dataForecast }) {
   }
 
 const GraphContainer = styled.div`
-    min-width: 300px;
-    max-width: 500px;
+    min-width: 340px;
+    max-width: 700px;
     height: 200px;
     margin-top: 25px;
     font-size: 10px;
