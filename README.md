@@ -1,7 +1,7 @@
 # Weather forecast application 
     A simple page that you can search for your city and get the city weather forecast.
-
-![Forecast App](https://github.com/RicardoSilvaF/weather-forecast/blob/main/Anima%C3%A7%C3%A3o2.gif?raw=true)
+    
+![Forecast App](https://github.com/RicardoSilvaF/weather-forecast/assets/89278845/2aaca96f-c65e-4b9d-9961-8810193c2e09)
 
 ### Deploy: https://weather-forecast-oail07gum-ricardosilvaf.vercel.app
 
